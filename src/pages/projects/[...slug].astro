@@ -1,0 +1,37 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const projects = (await getCollection("projects"));
+    
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: project,
+  }));
+}
+
+type Props = CollectionEntry<"projects">;
+
+const project = Astro.props;
+const { Content } = await project.render();
+---
+
+<PageLayout title={project.data.title} description={project.data.description}>
+  <Container>
+    <div class="space-y-4 max-w-2xl">
+      <h1 class="animate">{project.data.title}</h1>
+      <p class="animate text-black">{project.data.description}</p>
+    </div>
+    <div class="animate my-10 flex aspect-[16/9] overflow-hidden rounded-md">
+      <Image src={project.data.cover} alt={project.data.title} />
+    </div>
+    <div class="flex">
+        <article class="animate">
+          <Content />
+        </article>
+    </div>
+  </Container>
+</PageLayout>

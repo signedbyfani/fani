@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/Pretendard.woff2') format('woff2');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'EB Garamond';
+  src: url('/fonts/EBGaramond-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html,
+body {
+  @apply size-full;
+}
+
+body {
+  @apply font-sans antialiased font-medium tracking-[-0.0125rem] flex flex-col bg-white text-black/50;
+  font-family: "Pretendard", sans-serif;
+}
+
+::selection {
+  @apply bg-[#C4E456] text-black;
+}
+
+header {
+  @apply my-8;
+  @apply backdrop-blur-sm saturate-200;
+}
+
+main {
+  @apply flex-1 py-8;
+}
+
+footer {
+  @apply mt-16 py-5;
+}
+
+img {
+  @apply select-none;
+}
+
+article {
+  @apply max-w-full prose prose-img:mx-auto prose-img:my-auto;
+  @apply prose-headings:font-medium prose-p:font-sans;
+  @apply prose-headings:text-black;
+}
+
+@layer utilities {
+  article a {
+    @apply font-sans text-current underline underline-offset-2;
+    @apply decoration-black/30;
+    @apply transition-colors duration-300 ease-in-out;
+  }
+  article a:hover {
+    @apply text-black;
+    @apply decoration-black/25;
+  }
+}
+
+.animate {
+  @apply opacity-0 translate-y-8; /* Reduced translate-y for a gentler entry */
+  @apply transition-opacity transition-transform duration-700 ease-out; /* Slightly shorter duration */
+}
+
+.animate.show {
+  @apply opacity-100 translate-y-0;
+}
+
+html #back-to-top {
+  @apply opacity-0 pointer-events-none;
+}
+
+html.scrolled #back-to-top {
+  @apply opacity-100 pointer-events-auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+h1 {
+  @apply text-[64px] font-normal text-[#5E3D3D] tracking-[-0.04em] leading-none;
+  font-family: "EB Garamond", serif;
+}
+
+h2 {
+  @apply text-[2rem] font-semibold tracking-tight  text-black;
+  font-family: "Pretendard", sans-serif;
+}
+
+h3 {
+  @apply text-black text-[1.75rem]  font-semibold tracking-tight leading-[1.25];
+  font-family: "Pretendard", sans-serif;
+}
+
+h4 {
+  @apply text-black text-[1.5rem]  font-semibold tracking-tight leading-[1.25];
+  font-family: "Pretendard", sans-serif;
+}
+
+h5 {
+  @apply text-black text-[1.25rem]  font-semibold tracking-tight leading-[1.25];
+  font-family: "Pretendard", sans-serif;
+}
+
+strong,
+b {
+  @apply font-normal text-black;
+  
+}
+
+.bigtext {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+}

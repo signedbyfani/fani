@@ -1,0 +1,23 @@
+---
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+---
+
+<footer class="animate select-none">
+  <Container>
+    <div class="my-4">
+      <p>Say Hello</p>
+      <a href="mailto:imfanindra@gmail.com"><h2 class="hover:text-black/50">imfanindra@gmail.com</h2></a>
+    </div>
+    <div class="flex sm:justify-between flex-col sm:flex-row gap-y-2 sm:items-center items-left py-4">
+      <div class="flex flex-row gap-x-4">
+        <Link href="https://www.linkedin.com/in/fanindra-m/" external>LinkedIn</Link>
+        <Link href="https://github.com/signedbyfani" external>GitHub</Link>
+        <Link href="https://read.cv/fanindra_maharana">CV</Link>
+      </div>
+      <div>
+        © Fanindra Maharana - updated Jan 2025
+      </div>
+    </div>
+  </Container>
+</footer>
