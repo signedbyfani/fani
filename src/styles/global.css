@@ -125,9 +125,14 @@ h5 {
   font-family: "Pretendard", sans-serif;
 }
 
+h6 {
+  @apply text-black text-[1.125rem]  font-semibold tracking-tight leading-[1.25];
+  font-family: "Pretendard", sans-serif;
+}
+
 strong,
 b {
-  @apply font-normal text-black;
+  @apply font-semibold text-black;
   
 }
 

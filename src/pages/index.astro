@@ -3,12 +3,18 @@ import { getCollection } from "astro:content";
 import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
+import BlogCard from "@components/BlogCard.astro";
 import { HOME } from "@consts";
 
 const projects = await getCollection("projects");
+const writings = await getCollection("writing");
 
-// Sort projects by serial number (ascending)
-projects.sort((a, b) => a.data.serialNo - b.data.serialNo);
+projects.sort((a, b) => (Number(a.data.serialNo) || 0) - (Number(b.data.serialNo) || 0));
+writings.sort((a, b) => {
+  const dateA = new Date(a.data.date).getTime() || 0;
+  const dateB = new Date(b.data.date).getTime() || 0;
+  return dateB - dateA;
+});
 ---
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -28,6 +34,17 @@ projects.sort((a, b) => a.data.serialNo - b.data.serialNo);
       </div>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16">
         {projects.map((project) => <ArrowCard entry={project} />)}
+      </ul>
+    </section>
+
+    <section id="writing" class="animate space-y-8 md:space-y-12 mb-24">
+      <div class="flex flex-wrap gap-y-24 max-w-screen-md">
+        <h3 class="≈ text-black">
+          Stuff on my mind recently
+        </h3>
+      </div>
+      <ul class="flex flex-col gap-4">
+        {writings.map((writing) => <BlogCard entry={writing} />)}
       </ul>
     </section>
 

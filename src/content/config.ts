@@ -5,9 +5,19 @@ const projects = defineCollection({
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
-    cover: image(), // No width condition
+    cover: image(),
     serialNo: z.number().int().positive(),
   }),
 });
 
-export const collections = { projects };
+const writing = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.coerce.date(),
+  }),
+});
+
+
+export const collections = { projects, writing };

@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  entry: CollectionEntry<"writing">;
+};
+
+const { entry } = Astro.props;
+
+const formattedDate = new Date(entry.data.date).toLocaleDateString("en-GB", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "2-digit",
+});
+---
+
+<a href={`/${entry.collection}/${entry.slug}`} class="card flex flex-row gap-4 items-center">
+    <p class="bigtext text-black">{entry.data.title}</p>
+
+    <span class="flex-grow border-t border-dotted border-gray-300"></span>
+
+    <p class="font-mono">{formattedDate}</p>
+</a>

@@ -10,6 +10,6 @@ export default defineConfig({
       enabled: true,
     },
   }),
-  site: "https://www.fanindra.xyz/",
+  site: "https://fanindra.xyz/",
   integrations: [mdx(), sitemap(), tailwind()],
 });

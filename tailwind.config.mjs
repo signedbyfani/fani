@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Pretendard", "ESRebondGrotesque", ...defaultTheme.fontFamily.sans],
+        sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
         serif: ["EB Garamond", ...defaultTheme.fontFamily.serif]
       },
     },
