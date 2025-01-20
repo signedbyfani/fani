@@ -21,8 +21,8 @@ const { Content } = await project.render();
 
 <PageLayout title={project.data.title} description={project.data.description}>
   <Container>
-    <div class="space-y-4 max-w-xl">
-      <h1 class="animate">{project.data.title}</h1>
+    <div class="space-y-4 mx-auto max-w-screen-sm pr-8">
+      <h2 class="animate">{project.data.title}</h2>
       <p class="animate text-black">{project.data.description}</p>
     </div>
     <div class="animate my-10 flex aspect-[16/9] overflow-hidden rounded-md">

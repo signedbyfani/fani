@@ -19,20 +19,20 @@ writings.sort((a, b) => {
 
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
-    <section class="mt-24 mb-48 mx-auto max-w-screen-sm">
+    <section class="mt-24 mb-48 mx-auto max-w-screen-md">
         <h1
           class="animate text-[3.5rem] text-center sm:text-[4rem]"
         > Alo, I'm Fanindra, an <br>Interaction Designer
         </h1>
     </section>
 
-    <section class="space-y-8 md:space-y-12 mb-24">
+    <section class="space-y-8 mx-auto max-w-screen-sm md:space-y-12 mb-24">
       <div class="flex flex-wrap gap-y-24">
-        <h3 class="animate text-black/50">
-          Featured<span class="text-black"> Projects</span>
+        <h3 class="animate text-black">
+          Featured Projects
         </h3>
       </div>
-      <ul class="sm:grid sm:grid-cols-2 sm:gap-12 flex flex-col gap-8">
+      <ul class="flex flex-col gap-16">
         {projects.map((project) => <ArrowCard entry={project} />)}
       </ul>
     </section>

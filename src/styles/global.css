@@ -3,25 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Pretendard';
-  src: url('/fonts/Pretendard.woff2') format('woff2');
+  font-family: 'UncutSans';
+  src: url('/fonts/UncutSans.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'EB Garamond';
-  src: url('/fonts/EBGaramond-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'EB Garamond';
-  src: url('/fonts/EBGaramond-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
 
 html {
   overflow-y: scroll;
@@ -36,7 +22,7 @@ body {
 
 body {
   @apply font-sans antialiased font-medium tracking-[-0.0125rem] flex flex-col bg-white text-black/50;
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 ::selection {
@@ -101,33 +87,33 @@ p {
 }
 
 h1 {
-  @apply text-[64px] font-normal text-[#5E3D3D] tracking-[-0.04em] leading-none;
-  font-family: "EB Garamond", serif;
+  @apply text-[4rem] font-bold text-black tracking-tight leading-none;
+  font-family: "UncutSans", sans-serif;
 }
 
 h2 {
   @apply text-[2rem] font-semibold tracking-tight  text-black;
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 h3 {
   @apply text-black text-[1.75rem]  font-semibold tracking-tight leading-[1.25];
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 h4 {
   @apply text-black text-[1.5rem]  font-semibold tracking-tight leading-[1.25];
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 h5 {
   @apply text-black text-[1.25rem]  font-semibold tracking-tight leading-[1.25];
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 h6 {
   @apply text-black text-[1.125rem]  font-semibold tracking-tight leading-[1.25];
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
 }
 
 strong,
@@ -137,7 +123,7 @@ b {
 }
 
 .bigtext {
-  font-family: "Pretendard", sans-serif;
+  font-family: "UncutSans", sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
 }
