@@ -14,10 +14,10 @@ const formattedDate = new Date(entry.data.date).toLocaleDateString("en-GB", {
 });
 ---
 
-<a href={`/${entry.collection}/${entry.slug}`} class="card flex flex-row gap-4 items-center">
-    <p class="bigtext text-black">{entry.data.title}</p>
+<a href={`/${entry.collection}/${entry.slug}`} class="flex flex-col">
+  <div class="flex flex-row justify-between">
+    <p class="text-black">{entry.data.title}</p>
+    <span class="text-black/50 text-numerals text-sm">{formattedDate}</span></div>
+    <span class="flex-grow border-t border-dotted my-2 border-gray-300"></span>
 
-    <span class="flex-grow border-t border-dotted border-gray-300"></span>
-
-    <p class="font-mono">{formattedDate}</p>
 </a>
