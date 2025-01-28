@@ -5,8 +5,6 @@ cover: "./cover.jpeg"
 serialNo: 2
 ---
 
-<div class='mx-auto max-w-screen-sm mb-16'>
-
 In the first semester of my M.Des, we had the course - **Crafts, Cultures, and Habitat Studies**, and as a part of this, we got to explore Jaipur’s rich crafts and culture. We spent time with the artisans practicing **Thathera craft**, a traditional metalworking art. Talking to them, we heard their stories—about their craft, their struggles, and their daily lives. Inspired by our experience, **we created a book** capturing everything we learned and discovered. 
 
 #### The Team
@@ -18,7 +16,6 @@ In the first semester of my M.Des, we had the course - **Crafts, Cultures, and H
 
 ### The book that we put together!
 
-</div>
 
 ![Page 1](page1.webp)
 

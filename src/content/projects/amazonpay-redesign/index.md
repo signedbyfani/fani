@@ -5,7 +5,7 @@ cover: "./amazonpay.webp"
 serialNo: 4
 ---
 
-<div class='mx-auto max-w-screen-sm'>
+
 
 ### Why  did I take up this project?
 
@@ -18,11 +18,7 @@ I have asked people on my Instagram to take part in the survey through a Google 
 
 **The image below shows the survey results**
 
-</div>
-
-![Survey Results](Survey.webp)<div class="text-center  text-black/25 text-sm">Survey Results</div>
-
-<div class='mx-auto max-w-screen-sm '>
+![Survey](Survey.webp)<div class="text-center text-black/25 text-sm">Survey Results</div>
 
 #### Observations based on survey
 Nearly 70% of participants use Cred or PhonePe. A mere 6% of them use Amazon Pay as their primary payments app. Most of the participants use Amazon Pay rarely or only while shopping on Amazon. Only 15% of them use it regularly (but not necessarily be their primary app). There are mixed opinions about how conveniently can people navigate to the pay section in the Amazon app. Almost half of the users face difficulty in accessing the Amazon Pay page. Nearly 85% of the participants can complete a scan and pay task without feeling challenged.
@@ -34,9 +30,9 @@ Finding the Amazon Pay section is excessively complex, particularly for new or n
 
 **Below is the in-depth ananlysis of the challenges faced while using Amazon Pay**
 
-</div>
 
-<div class='mx-auto max-w-screen-lg'>
+
+
 
 ![Problem #1](Problem1.webp)<div class="text-center  text-black/25 text-sm">Problem #01</div>
 
@@ -46,9 +42,7 @@ Finding the Amazon Pay section is excessively complex, particularly for new or n
 
 ![Problem #3](Problem3.webp) <div class="text-center  text-black/25 text-sm">Problem #03</div>
 
-</div>
 
-<div class='mx-auto max-w-screen-sm '>
 
 #### Competitor  Analysis 
 
@@ -72,11 +66,10 @@ Improving these aspects could significantly enhance the user experience and usab
 ###  Ideation and  Design Process
 
 After examining the issues and requirements of the users, I began brainstorming and created preliminary **low-fidelity wireframes.**
-</div>
+
 
 ![Wireframes](lo-fi-wfs.webp)<div class="text-center  text-black/25 text-sm">Low Fidelity Wireframes</div>
 
-<div class='mx-auto max-w-screen-sm '>
 
 - Redesigned the homepage with emphasis on the **Amazon Pay Banner**
 - Redesigned the Amazon Pay Page with **simple navigation**
@@ -85,24 +78,23 @@ After examining the issues and requirements of the users, I began brainstorming 
 #### Refining  the designs
 
 **Homepage redesign**
-</div>
+
 
 ![Homepage UI](Prototype_Homepage.webp)<div class="text-center  text-black/25 text-sm">Redesigned Homepage -- Original Screen  vs  Low-fidelity Wireframe  vs  Redesigned Screen</div>
 
 
 ![Pay Section UI](Prototype_AmazonPay.webp)<div class="text-center  text-black/25 text-sm">Redesigned Pay Section -- Original Screen  vs  Low-fidelity Wireframe  vs  Redesigned Screen</div>
 
-<div class="mx-auto max-w-screen-sm ">
 
 
-#### Final Mockups </div>
+
+#### Final Mockups 
 ![Mockups](UI.webp)
 
-<div class="mx-auto max-w-screen-sm ">
+
 
 ###  Final thoughts
 
 This comprehensive evaluation of Amazon Pay revealed that despite Amazon's dominance in the e-commerce landscape, Amazon Pay's usage and acceptance were unexpectedly low. The pain points signified the pressing need for substantial improvements in navigation, UI clarity, and overall design hierarchy in Amazon Pay.
 
 This project focuses on enhancing the user experience through redesigning critical sections such as the homepage, and the payment section. Through this case study, the aim is to highlight the critical areas for improvement and the solutions proposed to enhance Amazon Pay, providing users with a more intuitive and efficient payment experience while navigating through the Amazon app.
-</div>

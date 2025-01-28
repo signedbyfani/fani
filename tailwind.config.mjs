@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["UncutSans", ...defaultTheme.fontFamily.sans],
+        sans: ["Pretendard", ...defaultTheme.fontFamily.sans],
         serif: [...defaultTheme.fontFamily.serif]
       },
     },
