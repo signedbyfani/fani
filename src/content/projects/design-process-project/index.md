@@ -13,8 +13,9 @@ As a part of my M. Des course - Design Process and Methods, we were tasked to ch
 
 Our focus began with a broad question: *Where can our design make a real impact?* We explored various themes—like the living conditions of sex workers, mobility, career guidance, and mental health. **Mental health** resonated with us because it’s not just a buzzword; it's something that touches all of us, yet it’s so deeply misunderstood.
 
+## Case study - Work in Progress
 
-## Our Secondary Research
+<!-- ## Our Secondary Research
 
 We began with secondary research. We wanted to understand the language around it, the nuances in various disorders, and how our ancient practices, like Ayurveda and religious texts, approached it. We wanted insights from all angles, traditional and modern, to create a holistic understanding.
 
@@ -64,4 +65,4 @@ Must haves for the solution
 
 Nice to haves 
 
-- A way to address stigmatization around mental health
+- A way to address stigmatization around mental health -->

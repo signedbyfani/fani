@@ -87,7 +87,7 @@ p {
 }
 
 h1 {
-  @apply text-[4rem] font-bold text-black tracking-tight leading-none;
+  @apply text-[4rem] font-semibold tracking-tight leading-none;
   font-family: "Pretendard", sans-serif;
 }
 
