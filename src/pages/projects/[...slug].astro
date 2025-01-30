@@ -21,12 +21,12 @@ const { Content } = await project.render();
 
 <PageLayout title={project.data.title} description={project.data.description}>
   <Container>
-    <div class="space-y-4">
-      <h2 class="animate">{project.data.title}</h2>
-      <p class="animate text-black">{project.data.description}</p>
-    </div>
-    <div class="animate my-10 flex aspect-[16/9] overflow-hidden rounded-md">
+    <div class="animate flex aspect-[16/9] overflow-hidden rounded-md">
       <Image src={project.data.cover} alt={project.data.title} />
+    </div>
+    <div class="space-y-2 mt-8 max-w-screen-sm mx-auto">
+      <p class="animate">{project.data.title}</p>
+      <h2 class="animate text-black">{project.data.description}</h2>
     </div>
     <div class="flex">
         <article class="animate">

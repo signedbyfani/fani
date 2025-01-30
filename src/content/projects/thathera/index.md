@@ -1,11 +1,13 @@
 ---
 title: "The song of Thathera"
-description: "As a part of our M.Des course, we explored Jaipur’s crafts and culture, spending time with Thathera artisans, learning their stories, and understanding their craft. We designed a book documenting our findings."
+description: "Explored Jaipur’s crafts, spent time with Thathera artisans, learning their stories, and understanding their craft. We designed a book documenting our findings."
 cover: "./cover.jpeg"
 serialNo: 2
 ---
 
-In the first semester of my M.Des, we had the course - **Crafts, Cultures, and Habitat Studies**, and as a part of this, we got to explore Jaipur’s rich crafts and culture. We spent time with the artisans practicing **Thathera craft**, a traditional metalworking art. Talking to them, we heard their stories—about their craft, their struggles, and their daily lives. Inspired by our experience, **we created a book** capturing everything we learned and discovered. 
+<div class="max-w-screen-sm mx-auto mb-16">
+
+In the first semester of my M.Des, we had the course - **Crafts, Cultures, and Habitat Studies**, and as a part of this, we got to explore Jaipur’s rich crafts and culture. We spent time with the artisans practicing **Thathera craft**, a traditional metalworking art. Talking to them, we heard their stories—about their craft, their struggles, and their daily lives. Inspired by our experience, **we documented a book** capturing everything we learned and discovered. 
 
 #### The Team
 
@@ -15,7 +17,7 @@ In the first semester of my M.Des, we had the course - **Crafts, Cultures, and H
 
 
 ### The book that we put together!
-
+</div>
 
 ![Page 1](page1.webp)
 

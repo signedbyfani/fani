@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  @apply bg-[#C4E456] text-black;
+  @apply bg-[#F3EEFC] text-[#241068];
 }
 
 header {
@@ -92,7 +92,7 @@ h1 {
 }
 
 h2 {
-  @apply text-[2rem] font-semibold tracking-tight  text-black;
+  @apply text-[2rem] font-semibold tracking-tight leading-[1.45] text-black;
   font-family: "Pretendard", sans-serif;
 }
 
@@ -124,6 +124,5 @@ b {
 
 .bigtext {
   font-family: "Pretendard", sans-serif;
-  font-weight: 600;
-  font-size: 1.125rem;
+  @apply font-semibold text-[1.5rem] leading-snug;
 }

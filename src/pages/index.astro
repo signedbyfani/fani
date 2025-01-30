@@ -21,35 +21,34 @@ writings.sort((a, b) => {
   <Container>
     <section class="mt-24 mb-48">
         <h1
-          class="animate text-[3.5rem] uppercase sm:text-center font-black sm:text-[6.25rem]"
+          class="animate text-[3rem] uppercase sm:text-center font-black sm:text-[6.25rem]"
         > Alo, I'm Fanindra, an <br>Interaction Designer
         </h1>
     </section>
 
     <section class="space-y-8 md:space-y-12 mb-24">
       <div class="flex flex-wrap gap-y-24">
-        <h3 class="animate text-black">
+        <h2 class="animate text-black">
           Featured Projects
-        </h3>
+        </h2>
       </div>
       <ul class="flex flex-col gap-16">
         {projects.map((project) => <ArrowCard entry={project} />)}
       </ul>
     </section>
 
-    <section id="about" class="flex flex-row gap-8 mb-24">
-      <div class="flex flex-col gap-y-4 animate">
-        <h5>About me</h5>
-        <p class="text-black text-xl">I'm Fanindra Maharana, an Interaction Designer who's all about crafting seamless digital experiences. Currently pursuing my M. Des in Interaction Design at JKLU, Jaipur.</p>
-        <p class="text-black text-lg">Beyond design, you'll find me watching cricket or consuming content about architecture, interior design, minimalism, tech, etc. Whether it's chatting about new movies and shows to tech trends, or discussing maps and geopolitics, I'm all ears. Let's kickstart some engaging conversations!
-        </p>
-      </div>
-      <div class="animate">
+    <section id="about" class="flex flex-col sm:flex-row gap-8 py-16 mb-24">
+      <div class="animate sm:w-1/2">
         <img src="me.gif" alt="me" class="rounded-md">
+      </div>
+      <div class="flex flex-col sm:w-1/2 gap-y-4 animate">
+        <p class="bigtext">I'm Fanindra Maharana, an Interaction Designer who's all about crafting seamless digital experiences. Currently pursuing my M. Des in Interaction Design at JKLU, Jaipur.</p>
+        <p class="text-lg">Beyond design, you'll find me watching cricket or consuming content about architecture, interior design, minimalism, tech, etc. Whether it's chatting about new movies and shows to tech trends, or discussing maps and geopolitics, I'm all ears. Let's kickstart some engaging conversations!</p>
+        <img src="me.jpg" alt="me" class="rounded-md">
       </div>
      </section>
 
-     <section id="writing" class="animate space-y-8 md:space-y-12">
+     <section id="writing" class="animate max-w-screen-sm mx-auto space-y-8 md:space-y-12">
       <div class="flex flex-wrap gap-y-24">
         <h5>
           Stuff on my mind recently
