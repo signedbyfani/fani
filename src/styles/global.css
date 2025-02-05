@@ -26,7 +26,7 @@ body {
 }
 
 ::selection {
-  @apply bg-[#F3EEFC] text-[#241068];
+  @apply bg-[#f1f1f1] text-[#FC3C02];
 }
 
 header {

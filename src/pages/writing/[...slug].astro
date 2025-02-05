@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 
+
 // Define static paths
 export async function getStaticPaths() {
   const writing = await getCollection("writing");
@@ -31,13 +32,13 @@ const formattedDate = new Date(writing.data.date).toLocaleDateString("en-GB", {
 
 <PageLayout title={writing.data.title} description={writing.data.description}>
   <Container>
-    <section class="max-w-xl mx-auto">
-    <div class="space-y-2">
+    <section class="flex flex-col sm:flex-row mx-auto">
+    <div class="space-y-2 sm:w-1/2">
       <h2 class="animate">{writing.data.title}</h2>
       <p class="animate text-black">{writing.data.description}</p>
       <p class="animate text-black/50 text-sm">Published - {formattedDate}</p>
     </div>
-    <div class="flex">
+    <div class="flex sm:w-1/2">
         <article class="animate">
           <Content />
         </article>
