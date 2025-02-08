@@ -12,11 +12,6 @@ export const HOME: Metadata = {
   DESCRIPTION: "Fanindra Maharana is an Interaction Design student at JKLU, Jaipur",
 };
 
-export const SANDBOX: Metadata = {
-  TITLE: "Sandbox",
-  DESCRIPTION: "Checkout some of my design explorations",
-};
-
 export const SOCIALS: Socials = [
   { 
     NAME: "LinkedIn",
