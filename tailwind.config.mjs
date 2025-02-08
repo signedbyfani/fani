@@ -10,7 +10,7 @@ export default {
     extend: {
       fontFamily: {
         sans: [...defaultTheme.fontFamily.sans],
-        serif: [...defaultTheme.fontFamily.serif]
+        serif: ["Palatino", ...defaultTheme.fontFamily.serif]
       },
     },
   },
