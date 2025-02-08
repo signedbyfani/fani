@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  @apply font-sans antialiased font-medium tracking-[-0.0125rem] flex flex-col bg-white text-black;
+  @apply font-sans antialiased font-medium tracking-[-0.0125rem] flex flex-col bg-black text-white;
   font-family: "Pretendard", sans-serif;
 }
 
@@ -29,40 +29,11 @@ body {
   @apply bg-[#f1f1f1] text-[#FC3C02];
 }
 
-header {
-  @apply my-8;
-  @apply backdrop-blur-sm saturate-200;
-}
 
 main {
   @apply flex-1 py-8;
 }
 
-footer {
-  @apply mt-16 py-5;
-}
-
-img {
-  @apply select-none;
-}
-
-article {
-  @apply max-w-full prose prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-medium prose-p:font-sans prose-p:text-neutral-700;
-  @apply prose-headings:text-black;
-}
-
-@layer utilities {
-  article a {
-    @apply font-sans text-current underline underline-offset-2;
-    @apply decoration-black/30;
-    @apply transition-colors duration-300 ease-in-out;
-  }
-  article a:hover {
-    @apply text-black;
-    @apply decoration-black/25;
-  }
-}
 
 .animate {
   @apply opacity-0 translate-y-8; /* Reduced translate-y for a gentler entry */
@@ -73,13 +44,6 @@ article {
   @apply opacity-100 translate-y-0;
 }
 
-html #back-to-top {
-  @apply opacity-0 pointer-events-none;
-}
-
-html.scrolled #back-to-top {
-  @apply opacity-100 pointer-events-auto;
-}
 
 p {
   font-size: 1rem;
@@ -120,9 +84,4 @@ strong,
 b {
   @apply font-semibold text-black;
   
-}
-
-.bigtext {
-  font-family: "Pretendard", sans-serif;
-  @apply font-semibold text-[1.5rem] leading-snug;
 }
